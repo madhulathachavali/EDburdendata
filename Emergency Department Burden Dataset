@@ -1,0 +1,28 @@
+Emergency Department Burden Dataset
+This dataset provides the ratio of Emergency Department (ED) encounters to treatment stations to represent the ED burden. Smaller ratios indicate fewer ED visits per available treatment station, signifying less burden. Conversely, larger ratios indicate a greater burden, with more ED visits per available treatment station.
+
+The dataset breaks down encounters by various health-related conditions, including:
+
+Active COVID-19
+Asthma
+Cancer
+Cardiac
+COPD
+COVID-19 History
+Diabetes
+Homelessness
+Hypertension
+Mental Health
+Obesity
+Pneumonia
+Respiratory Issues
+Sepsis
+Stroke
+Substance Abuse
+Source: Data.gov
+
+
+
+
+
+
