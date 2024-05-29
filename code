@@ -1,0 +1,48 @@
+/* Specify the path to your CSV file */
+%let filepath = /home/u61152431/EDdataset/ed-volume-and-capacity-2021.csv;
+
+/* Import the CSV file */
+PROC IMPORT DATAFILE="&filepath"
+    OUT=ED
+    DBMS=CSV
+    REPLACE;
+    GETNAMES=YES; /* Assumes the first row contains variable names */
+RUN;
+
+/* View the imported data */
+PROC PRINT DATA=ED (OBS=10); /* Print the first 10 rows */
+RUN;
+
+/* View the structure of the dataset, including the list of variables */
+PROC CONTENTS DATA=ed; 
+RUN;
+
+DATA ed;
+    SET ed;
+    LENGTH _all_ $100; /* Increase length to 100 for all character variables */
+RUN;
+/* Category CountyName EDDXCount EDStations
+ FacilityName2 HospitalOwnership LATITUDE LICENSED_BED_SIZE
+ LONGITUDE MentalHealthShortageArea PrimaryCareShortageArea 
+ TEACHINGDesignation Tot_ED_NmbVsts UrbanRuralDesi
+ oshpd_id system */
+
+/* Generate summary statistics for numerical variables */
+PROC MEANS DATA=ED N MEAN STD MIN MAX;
+RUN;
+
+/* Generate frequency distributions for categorical variables */
+PROC FREQ DATA=ed;
+    TABLES CountyName FacilityName2 HospitalOwnership UrbanRuralDesi;
+RUN;
+
+/* Box Plot of Number of ED Visits by Health Condition */
+PROC SGPLOT DATA=ed;
+    VBOX EDDXCount / CATEGORY=Category;
+    TITLE "Box Plot of Number of ED Visits by Health Condition";
+RUN;
+
+PROC SGPLOT DATA=ed;
+    VLINE Category / RESPONSE=EDDXCount STAT=MEAN;
+    TITLE "Mean Number of ED Visits by Health Condition";
+RUN;
