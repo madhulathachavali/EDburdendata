@@ -16,7 +16,7 @@ Substance Abuse
 ### Summary
 
 
-#### Total number of ED visits by County
+#### Total Number of ED Visits by County
 Los Angeles, Orange County, San Diego, Riverside, and San Bernardino are the top counties with the highest ED Visits.
 
    
@@ -76,7 +76,7 @@ Los Angeles, Orange County, San Diego, Riverside, and San Bernardino are the top
 | 51  | Glenn           | 7,398           |
 
 
-#### ED Visits by health condition
+#### ED Visits by Health Condition
 The graph illustrates the number of emergency department (ED) visits by health condition. Active COVID-19 had the highest number of visits. Conditions are displayed in descending order based on the total number of ED visits.
 
 1. Active COVID-19: 8,932,253 visits
