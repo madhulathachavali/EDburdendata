@@ -46,6 +46,80 @@ PROC SGPLOT DATA=ed;
     VLINE Category / RESPONSE=EDDXCount STAT=MEAN;
     TITLE "Mean Number of ED Visits by Health Condition";
 RUN;
+********************************************************;
+ed_visits by County
+/* Step 1: Input the Data */
+data ed_visits;
+    input CountyName $ Total_ED_Visits;
+    datalines;
+Los_Angeles 3468109
+Orange_County 1108283
+San_Diego 947565
+Riverside 889722
+San_Bernardino 841649
+Alameda 777934
+Sacramento 723933
+Santa_Clara 636471
+San_Joaquin 582963
+Contra_Costa 487899
+Fresno 468757
+Kern 387285
+San_Francisco 339309
+Placer 332690
+Solano 331934
+Stanislaus 305065
+Ventura 290721
+Santa_Barbara 227091
+San_Mateo 178875
+Monterey 162903
+Tulare 142292
+San_Luis_Obispo 140519
+Madera 136296
+Shasta 134708
+Merced 124882
+Kings 123847
+Butte 120396
+Marin 104077
+Sonoma 103102
+Yuba 94088
+Mendocino 83689
+Yolo 78260
+Lake 61073
+El_Dorado 59864
+Nevada 54660
+Napa 51280
+Tuolumne 50361
+Tehama 49082
+Imperial 43623
+San_Benito 32468
+Amador 32135
+Humboldt 25489
+Del_Norte 19797
+Calaveras 18628
+Siskiyou 16496
+Lassen 16180
+Inyo 13059
+Mariposa 7994
+Plumas 7685
+Modoc 7650
+Glenn 7398
+;
+run;
+
+/* Step 2: Sort the Data by Total ED Visits in Descending Order */
+proc sort data=ed_visits;
+    by descending Total_ED_Visits;
+run;
+
+
+
+/* Step 3: Create the Horizontal Bar Chart with Data Labels */
+proc sgplot data=ed_visits;
+    hbar CountyName / response=Total_ED_Visits datalabel;
+    xaxis label="Total ED Visits" grid;
+    yaxis label="County Name";
+    title "Total ED Visits by County";
+run;
 
 ********************************************************;
 Alameda County
