@@ -13,6 +13,26 @@ Substance Abuse
 ### Source: Data.gov
 (https://catalog.data.gov/dataset/emergency-department-volume-and-capacity)
 
+### Data Dictionary
+| Field Title                | Field Name                   | Data Type | Description                                                                          |
+|----------------------------|------------------------------|-----------|--------------------------------------------------------------------------------------|
+| OSHPD_ID                   | oshpd_id                     | Number    | OSHPD ID for the facility                                                            |
+| Facility Name              | FacilityName2                | Plain Text| Name of the facility                                                                 |
+| County Name                | CountyName                   | Plain Text| County the facility is located in                                                    |
+| System                     | system                       | Plain Text| Hospital system the facility is a part of (if applicable)                            |
+| Licensed Bed Size          | LICENSED_BED_SIZE            | Plain Text| Category(range) of ED treatment stations                                             |
+| Hospital Ownership         | HospitalOwnership            | Plain Text| Facility ownership category                                                          |
+| Urban Rural Designation    | UrbanRuralDesi               | Plain text| The area designation for the location of the facility                                |
+| Teaching Designation       | TEACHINGDesignation          | Plain Text| Indicates if a facility is a teaching or non-teaching facility                       |
+| Category                   | Category                     | Plain Text| Health-related condition                                                             |
+| ED Encounters              | Tot_ED_NmbVsts               | Number    | Total number of ED Encounters for the facility                                       |
+| ED Stations                | EDStations                   | Number    | Number of ED treatment stations                                                      |
+| ED Burden                  | EDDXCount                    | Number    | Number of ED visits for the specific category (health-related condition)             |
+| Latitude                   | LATITUDE                     | Number    | Facility latitude                                                                    |
+| Longitude                  | LONGITUDE                    | Number    | Facility longitude                                                                   |
+| HPSA - Primary Care        | PrimaryCareShortageArea      | Plain Text| Indicates if a facility is in a Health Professional Shortage Area - Primary Care      |
+| HPSA - Mental Health       | MentalHealthShortageArea     | Plain Text| Indicates if a facility is in a Health Professional Shortage Area - Mental Health     |
+
 ### Summary
 
 
