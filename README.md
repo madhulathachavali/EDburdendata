@@ -164,11 +164,62 @@ Total ED Visits: 13,626,808 visits
 | No                       | 170       | 100.00% |
 
 
+#### Summary Statistics for Number of ED Visits by Primary Care Shortage Area and Mental Health Shortage Area for each System in Alameda County
 
+**EDDXCount: Number of ED visits for the specific category (health-related condition)**
 
+- **Alameda Health System**: The total number of ED visits in areas without primary care and mental health shortages is 135,779.
+- **Sutter Health**: The total number of ED visits is 574,899 in areas without shortages, 137,826 in areas with only mental health shortages, 32,135 in areas with only primary care shortages, and 75,244 in regions with both shortages.
+- **Kaiser Foundation Hospital**: The total number of ED visits is 2,696,826 in areas without shortages, 530,968 in areas with only mental health shortages, and 412,944 in areas with only primary care shortages.
+- **N/A**: The total number of ED visits is 1,484,796 in areas without shortages, 931,605 in areas with only mental health shortages, 387,830 in areas with only primary care shortages, and 824,578 in areas with both shortages.
 
+### Alameda Health System
 
+**The MEANS Procedure**
 
+**Analysis Variable: EDDXCount**
+
+| PrimaryCareShortageArea | MentalHealthShortageArea | Sum      |
+|-------------------------|--------------------------|----------|
+| No                      | No                       | 135,779  |
+
+### Sutter Health
+
+**The MEANS Procedure**
+
+**Analysis Variable: EDDXCount**
+
+| PrimaryCareShortageArea | MentalHealthShortageArea | Sum      |
+|-------------------------|--------------------------|----------|
+| No                      | No                       | 574,899  |
+|                         | Yes                      | 137,826  |
+| Yes                     | No                       | 32,135   |
+|                         | Yes                      | 75,244   |
+
+### Kaiser Foundation Hospital
+
+**The MEANS Procedure**
+
+**Analysis Variable: EDDXCount**
+
+| PrimaryCareShortageArea | MentalHealthShortageArea | Sum      |
+|-------------------------|--------------------------|----------|
+| No                      | No                       | 2,696,826|
+|                         | Yes                      | 530,968  |
+| Yes                     | No                       | 412,944  |
+
+### N/A
+
+**The MEANS Procedure**
+
+**Analysis Variable: EDDXCount**
+
+| PrimaryCareShortageArea | MentalHealthShortageArea | Sum      |
+|-------------------------|--------------------------|----------|
+| No                      | No                       | 1,484,796|
+|                         | Yes                      | 931,605  |
+| Yes                     | No                       | 387,830  |
+|                         | Yes                      | 824,578  |
 
 
 
