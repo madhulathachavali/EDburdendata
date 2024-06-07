@@ -111,6 +111,61 @@ Total ED Visits: 13,626,808 visits
 
 <img width="654" alt="image" src="https://github.com/madhulathachavali/EDburdendata/assets/71414635/bbd75044-76fd-46cf-b3cd-eae27d98e335">
 
+### Alameda County 
+
+#### Hospital Ownership: Facility Ownership Category
+
+| HospitalOwnership | Frequency | Percent |
+|-------------------|-----------|---------|
+| Government        | 51        | 30.00%  |
+| Nonprofit         | 119       | 70.00%  |
+
+#### Licensed Bed Size: Category (Range) of ED Treatment Stations
+
+| LICENSED_BED_SIZE | Frequency | Percent |
+|-------------------|-----------|---------|
+| 100-149           | 51        | 30.00%  |
+| 150-199           | 17        | 10.00%  |
+| 200-299           | 34        | 20.00%  |
+| 300-499           | 68        | 40.00%  |
+
+#### Urban Rural Designation: The Area Designation For The Location Of The Facility
+
+| UrbanRuralDesi | Frequency | Percent |
+|----------------|-----------|---------|
+| Urban          | 170       | 100.00% |
+
+#### Teaching Designation: Indicates If a Facility Is Teaching or not
+
+| TEACHINGDesignation | Frequency | Percent |
+|---------------------|-----------|---------|
+| Non-Teaching        | 153       | 90.00%  |
+| Teaching            | 17        | 10.00%  |
+
+#### System: Hospital System The Facility Is a Part Of (if applicable)
+
+| system                 | Frequency | Percent |
+|------------------------|-----------|---------|
+| Alameda Health System  | 34        | 20.00%  |
+| Kaiser Foundation Hos  | 51        | 30.00%  |
+| N/A                    | 34        | 20.00%  |
+| Sutter Health          | 51        | 30.00%  |
+
+#### Primary Care Shortage Area
+
+| PrimaryCareShortageArea | Frequency | Percent |
+|-------------------------|-----------|---------|
+| No                      | 170       | 100.00% |
+
+#### Mental Health Shortage Area
+
+| MentalHealthShortageArea | Frequency | Percent |
+|--------------------------|-----------|---------|
+| No                       | 170       | 100.00% |
+
+
+
+
 
 
 
