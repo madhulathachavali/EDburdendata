@@ -166,5 +166,21 @@ proc freq data=la_data;
     table MentalHealthShortageArea  /nocum nofreq ;
     title2 "Mental Health Shortage Area";  
 run;
+********************************************************;
+Summary Statistics for EDDXCount by System and Category in Alameda County
+/* Step 1: Filter the Data for Alameda */
+data alameda_data;
+    set ed_data;
+    if CountyName = 'Alameda';
+    keep  CountyName System Category EDDXCOUNT;
+run;
+
+/* Step 2: Summary Statistics for EDDXCount by System and Category */
+proc means data=alameda_data sum maxdec=0 nonobs;
+    class System Category;
+    var EDDXCount;
+    title "Summary Statistics for EDDXCount by System and Category for Alameda County";
+run;
+********************************************************;
 
 
