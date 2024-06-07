@@ -181,6 +181,66 @@ proc means data=alameda_data sum maxdec=0 nonobs;
     var EDDXCount;
     title "Summary Statistics for EDDXCount by System and Category for Alameda County";
 run;
+
 ********************************************************;
+*****************************************;
+title1 "Summary Statistics for EDDXCount by Primary Care Shortage Area and Mental Health Shortage Area for each system in Alameda County";
+*****************************************;
+data AHS;
+    set ed_data;
+    if System = 'Alameda Health System';
+    keep  System Category PrimaryCareShortageArea MentalHealthShortageArea EDDXCOUNT;
+run;
+
+/* Step 2: Summarize the data using proc means */
+proc means data=AHS sum maxdec=0 nonobs;
+    class PrimaryCareShortageArea MentalHealthShortageArea;
+    var EDDXCount;
+    output out=summary_data sum=Total_EDDXCount;
+    title2 "Alameda Health System";
+run;
+*****************************************;
+data SH;
+    set ed_data;
+    if System = 'Sutter Health';
+    keep  System Category PrimaryCareShortageArea MentalHealthShortageArea EDDXCOUNT;
+run;
+
+/* Step 2: Summarize the data using proc means */
+proc means data=SH sum maxdec=0 nonobs;
+    class PrimaryCareShortageArea MentalHealthShortageArea;
+    var EDDXCount;
+    output out=summary_data sum=Total_EDDXCount;
+    title2 "Sutter Health";
+run;
+*****************************************;
+data KFH;
+    set ed_data;
+    if System = 'Kaiser Foundation Hos';
+    keep  System Category PrimaryCareShortageArea MentalHealthShortageArea EDDXCOUNT;
+run;
+
+/* Step 2: Summarize the data using proc means */
+proc means data=KFH sum maxdec=0 nonobs ;
+    class PrimaryCareShortageArea MentalHealthShortageArea;
+    var EDDXCount;
+    output out=summary_data sum=Total_EDDXCount;
+    title2 "Kaiser Foundation Hospital";
+run;
+*****************************************;
+data NA;
+    set ed_data;
+    if System = 'N/A';
+    keep  System Category PrimaryCareShortageArea MentalHealthShortageArea EDDXCOUNT;
+run;
+
+/* Step 2: Summarize the data using proc means */
+proc means data=NA sum maxdec=0 nonobs ;
+    class PrimaryCareShortageArea MentalHealthShortageArea;
+    var EDDXCount;
+    output out=summary_data sum=Total_EDDXCount;
+    title2 "N/A";
+run;
+*****************************************;
 
 
