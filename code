@@ -46,3 +46,51 @@ PROC SGPLOT DATA=ed;
     VLINE Category / RESPONSE=EDDXCount STAT=MEAN;
     TITLE "Mean Number of ED Visits by Health Condition";
 RUN;
+
+********************************************************;
+Alameda County
+********************************************************;
+/* Step 2: Filter the Data for Los Angeles */
+data la_data;
+    set ed_data;
+    if CountyName = 'Alameda' then output;
+run;
+title "Frequency Analysis for Categorical Variables";
+ODS NOPTITLE;
+/* Step 2: Frequency Analysis for Categorical Variables */
+proc freq data=la_data;
+    table Hospitalownership /nocum nofreq ;
+    title2 "Hospital Ownership: Facility Ownership Category";
+run;
+
+proc freq data=la_data;
+    table Licensed_bed_size /nocum nofreq ;
+    title2 "Licensed Bed Size: Category (Range) of ED Treatment Stations";
+run;
+
+proc freq data=la_data;
+    table UrbanRuralDesi /nocum nofreq ;
+    title2 "Urban Rural Designation: The Area Designation For The Location Of The Facility";
+run;
+
+proc freq data=la_data;
+    table TEACHINGDesignation /nocum nofreq ;
+    title2 "Teaching Designation: Indicates If a Facility Is Teaching or not";
+run;
+
+proc freq data=la_data;
+    table system /nocum nofreq ;
+    title2 "System: Hospital System The Facility Is a Part Of (if applicable)";  
+run;
+
+proc freq data=la_data;
+    table PrimaryCareShortageArea  /nocum nofreq ;
+    title2 "Primary Care Shortage Area";  
+run;
+
+proc freq data=la_data;
+    table MentalHealthShortageArea  /nocum nofreq ;
+    title2 "Mental Health Shortage Area";  
+run;
+
+
