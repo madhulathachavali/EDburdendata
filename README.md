@@ -119,61 +119,70 @@ Total ED Visits: 13,626,808 visits
 - **Kaiser Foundation Hospital**: The total number of ED visits is 2,696,826 in areas without shortages, 530,968 in areas with only mental health shortages, and 412,944 in areas with only primary care shortages.
 - **N/A**: The total number of ED visits is 1,484,796 in areas without shortages, 931,605 in areas with only mental health shortages, 387,830 in areas with only primary care shortages, and 824,578 in areas with both shortages.
 
-### Alameda Health System
+#### Summary Statistics for EDDXCount by Various Designations in Alameda Health System
 
-**The MEANS Procedure**
-
-**Analysis Variable: EDDXCount**
-
-| PrimaryCareShortageArea | MentalHealthShortageArea | Sum      |
-|-------------------------|--------------------------|----------|
-| No                      | No                       | 135,779  |
-
-### Sutter Health
-
-**The MEANS Procedure**
+#### Alameda Health System
 
 **Analysis Variable: EDDXCount**
 
-| PrimaryCareShortageArea | MentalHealthShortageArea | Sum      |
-|-------------------------|--------------------------|----------|
-| No                      | No                       | 574,899  |
-|                         | Yes                      | 137,826  |
-| Yes                     | No                       | 32,135   |
-|                         | Yes                      | 75,244   |
+| HospitalOwnership | UrbanRuralDesi | TEACHINGDesignation | PrimaryCareShortageArea | MentalHealthShortageArea | N Obs | Sum        |
+|-------------------|----------------|---------------------|-------------------------|--------------------------|-------|------------|
+| Government        | Urban          | Non-Teaching        | No                      | No                       | 34    | 135,779.00 |
 
-### Kaiser Foundation Hospital
-
-**The MEANS Procedure**
+#### Sutter Health
 
 **Analysis Variable: EDDXCount**
 
-| PrimaryCareShortageArea | MentalHealthShortageArea | Sum      |
-|-------------------------|--------------------------|----------|
-| No                      | No                       | 2,696,826|
-|                         | Yes                      | 530,968  |
-| Yes                     | No                       | 412,944  |
+| HospitalOwnership | UrbanRuralDesi | TEACHINGDesignation | PrimaryCareShortageArea | MentalHealthShortageArea | N Obs | Sum        |
+|-------------------|----------------|---------------------|-------------------------|--------------------------|-------|------------|
+| Nonprofit         | Rural          | Non-Teaching        | Ye                      | No                       | 17    | 32,135.00  |
+|                   |                |                     |                         | Ye                       | 51    | 75,244.00  |
+|                   | Urban          | Non-Teaching        | No                      | No                       | 187   | 574,899.00 |
+|                   |                |                     |                         | Ye                       | 68    | 137,826.00 |
 
-### N/A
-
-**The MEANS Procedure**
+#### Kaiser Foundation Hospital
 
 **Analysis Variable: EDDXCount**
 
-| PrimaryCareShortageArea | MentalHealthShortageArea | Sum      |
-|-------------------------|--------------------------|----------|
-| No                      | No                       | 1,484,796|
-|                         | Yes                      | 931,605  |
-| Yes                     | No                       | 387,830  |
-|                         | Yes                      | 824,578  |
+| HospitalOwnership | UrbanRuralDesi | TEACHINGDesignation | PrimaryCareShortageArea | MentalHealthShortageArea | N Obs | Sum        |
+|-------------------|----------------|---------------------|-------------------------|--------------------------|-------|------------|
+| Nonprofit         | Urban          | Non-Teaching        | No                      | No                       | 357   | 2,644,196.00|
+|                   |                |                     |                         | Ye                       | 68    | 437,844.00 |
+|                   |                |                     | Ye                      | No                       | 34    | 326,348.00 |
+|                   |                | Teaching            | No                      | No                       | 17    | 52,630.00  |
+|                   |                |                     |                         | Ye                       | 17    | 93,124.00  |
+|                   |                |                     | Ye                      | No                       | 17    | 86,596.00  |
 
+#### N/A
 
+**Analysis Variable: EDDXCount**
 
-
-
-
-
-
-
-
-
+| HospitalOwnership | UrbanRuralDesi | TEACHINGDesignation | PrimaryCareShortageArea | MentalHealthShortageArea | N Obs | Sum        |
+|-------------------|----------------|---------------------|-------------------------|--------------------------|-------|------------|
+| Government        | Front          | Non-Teaching        | Ye                      | No                       | 16    | 2,301.00   |
+|                   |                |                     |                         | Ye                       | 102   | 35,312.00  |
+|                   | Rural          | Non-Teaching        | No                      | No                       | 17    | 10,758.00  |
+|                   |                |                     |                         | Ye                       | 17    | 31,590.00  |
+|                   |                |                     | Ye                      | No                       | 34    | 54,827.00  |
+|                   |                |                     |                         | Ye                       | 102   | 107,346.00 |
+|                   | Urban          | Non-Teaching        | No                      | No                       | 85    | 279,772.00 |
+|                   |                |                     |                         | Ye                       | 34    | 226,215.00 |
+|                   |                |                     | Ye                      | No                       | 17    | 9,978.00   |
+|                   |                |                     |                         | Ye                       | 51    | 243,142.00 |
+|                   |                | Teaching            | No                      | No                       | 17    | 97,530.00  |
+|                   |                |                     |                         | Ye                       | 34    | 210,157.00 |
+| Investor O        | Front          | Non-Teaching        | Ye                      | Ye                       | 17    | 7,398.00   |
+|                   | Rural          | Non-Teaching        | Ye                      | Ye                       | 34    | 48,189.00  |
+|                   | Urban          | Non-Teaching        | No                      | No                       | 51    | 136,282.00 |
+|                   |                |                     |                         | Ye                       | 34    | 76,350.00  |
+|                   |                |                     | Ye                      | No                       | 34    | 47,596.00  |
+| Nonprofit         | Front          | Non-Teaching        | Ye                      | Ye                       | 17    | 5,794.00   |
+|                   | Rural          | Non-Teaching        | No                      | No                       | 34    | 46,998.00  |
+|                   |                |                     |                         | Ye                       | 34    | 34,371.00  |
+|                   |                |                     | Ye                      | Ye                       | 153   | 321,894.00 |
+|                   | Urban          | Non-Teaching        | No                      | No                       | 220   | 876,532.00 |
+|                   |                |                     |                         | Ye                       | 85    | 352,922.00 |
+|                   |                |                     | Ye                      | No                       | 34    | 75,735.00  |
+|                   |                |                     |                         | Ye                       | 17    | 55,503.00  |
+|                   |                | Teaching            | No                      | No                       | 17    | 36,924.00  |
+|                   |                |                     | Ye                      | No                       | 34    | 197,393.00 |
