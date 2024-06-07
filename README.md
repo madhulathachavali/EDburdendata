@@ -37,63 +37,9 @@ Substance Abuse
 
 
 #### Total Number of ED Visits by County
-Los Angeles, Orange County, San Diego, Riverside, and San Bernardino are the top counties with the highest ED Visits.
+The bar chart represents the total number of Emergency Department (ED) visits for the top 10 counties in California. Los Angeles County has the highest number of ED visits with 3,468,109 visits, followed by Orange County with 1,108,283 visits, and San Diego County with 947,565 visits. The numbers of ED visits decrease progressively among the remaining counties, with Contra Costa County having the fewest visits among the top 10 with 487,899 visits.
 
-   
- 
-| Obs | CountyName      | Total_ED_Visits |
-|-----|-----------------|-----------------|
-| 1   | Los Angeles     | 3,468,109       |
-| 2   | Orange County   | 1,108,283       |
-| 3   | San Diego       | 947,565         |
-| 4   | Riverside       | 889,722         |
-| 5   | San Bernardino  | 841,649         |
-| 6   | Alameda         | 777,934         |
-| 7   | Sacramento      | 723,933         |
-| 8   | Santa Clara     | 636,471         |
-| 9   | San Joaquin     | 582,963         |
-| 10  | Contra Costa    | 487,899         |
-| 11  | Fresno          | 468,757         |
-| 12  | Kern            | 387,285         |
-| 13  | San Francisco   | 339,309         |
-| 14  | Placer          | 332,690         |
-| 15  | Solano          | 331,934         |
-| 16  | Stanislaus      | 305,065         |
-| 17  | Ventura         | 290,721         |
-| 18  | Santa Barbara   | 227,091         |
-| 19  | San Mateo       | 178,875         |
-| 20  | Monterey        | 162,903         |
-| 21  | Tulare          | 142,292         |
-| 22  | San Luis Obispo | 140,519         |
-| 23  | Madera          | 136,296         |
-| 24  | Shasta          | 134,708         |
-| 25  | Merced          | 124,882         |
-| 26  | Kings           | 123,847         |
-| 27  | Butte           | 120,396         |
-| 28  | Marin           | 104,077         |
-| 29  | Sonoma          | 103,102         |
-| 30  | Yuba            | 94,088          |
-| 31  | Mendocino       | 83,689          |
-| 32  | Yolo            | 78,260          |
-| 33  | Lake            | 61,073          |
-| 34  | El Dorado       | 59,864          |
-| 35  | Nevada          | 54,660          |
-| 36  | Napa            | 51,280          |
-| 37  | Tuolumne        | 50,361          |
-| 38  | Tehama          | 49,082          |
-| 39  | Imperial        | 43,623          |
-| 40  | San Benito      | 32,468          |
-| 41  | Amador          | 32,135          |
-| 42  | Humboldt        | 25,489          |
-| 43  | Del Norte       | 19,797          |
-| 44  | Calaveras       | 18,628          |
-| 45  | Siskiyou        | 16,496          |
-| 46  | Lassen          | 16,180          |
-| 47  | Inyo            | 13,059          |
-| 48  | Mariposa        | 7,994           |
-| 49  | Plumas          | 7,685           |
-| 50  | Modoc           | 7,650           |
-| 51  | Glenn           | 7,398           |
+![output (2)](https://github.com/madhulathachavali/Emergency-Department-Burden-Dataset/assets/71414635/cd77da5b-eead-4232-9e98-7384d1e2f779)
 
 
 #### ED Visits by Health Condition
