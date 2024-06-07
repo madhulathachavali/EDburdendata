@@ -186,61 +186,57 @@ run;
 *****************************************;
 title1 "Summary Statistics for EDDXCount by Primary Care Shortage Area and Mental Health Shortage Area for each system in Alameda County";
 *****************************************;
+/* Step 1: Filter the dataset for Alameda Health System */
 data AHS;
     set ed_data;
-    if System = 'Alameda Health System';
-    keep  System Category PrimaryCareShortageArea MentalHealthShortageArea EDDXCOUNT;
+    if system = 'Alameda Health System';
+    keep system HospitalOwnership LICENSED_BED_SIZE UrbanRuralDesi TEACHINGDesignation PrimaryCareShortageArea MentalHealthShortageArea EDDXCount;
 run;
-
-/* Step 2: Summarize the data using proc means */
-proc means data=AHS sum maxdec=0 nonobs;
-    class PrimaryCareShortageArea MentalHealthShortageArea;
+/* Step 2: Generate mean tables for continuous variables AHS*/
+proc means data=AHS sum ;
     var EDDXCount;
-    output out=summary_data sum=Total_EDDXCount;
-    title2 "Alameda Health System";
+    class HospitalOwnership UrbanRuralDesi TEACHINGDesignation PrimaryCareShortageArea MentalHealthShortageArea;
+    title "Alameda Health System";
 run;
-*****************************************;
+***********************************************************;
+/* Step 1: Filter the dataset for Sutter Health */
 data SH;
     set ed_data;
     if System = 'Sutter Health';
-    keep  System Category PrimaryCareShortageArea MentalHealthShortageArea EDDXCOUNT;
+    keep system HospitalOwnership LICENSED_BED_SIZE UrbanRuralDesi TEACHINGDesignation PrimaryCareShortageArea MentalHealthShortageArea EDDXCount;
 run;
 
-/* Step 2: Summarize the data using proc means */
-proc means data=SH sum maxdec=0 nonobs;
-    class PrimaryCareShortageArea MentalHealthShortageArea;
+/* Step 2: Generate mean tables for continuous variables */
+proc means data=SH sum;
     var EDDXCount;
-    output out=summary_data sum=Total_EDDXCount;
-    title2 "Sutter Health";
+    class HospitalOwnership UrbanRuralDesi TEACHINGDesignation PrimaryCareShortageArea MentalHealthShortageArea;
+    title "Sutter Health";
 run;
-*****************************************;
+***********************************************************;
+/* Step 1: Filter the dataset for Kaiser Foundation Hospital */
 data KFH;
     set ed_data;
     if System = 'Kaiser Foundation Hos';
-    keep  System Category PrimaryCareShortageArea MentalHealthShortageArea EDDXCOUNT;
+    keep system HospitalOwnership LICENSED_BED_SIZE UrbanRuralDesi TEACHINGDesignation PrimaryCareShortageArea MentalHealthShortageArea EDDXCount;
 run;
-
-/* Step 2: Summarize the data using proc means */
-proc means data=KFH sum maxdec=0 nonobs ;
-    class PrimaryCareShortageArea MentalHealthShortageArea;
+/* Step 2: Generate mean tables for continuous variables */
+proc means data=KFH sum;
     var EDDXCount;
-    output out=summary_data sum=Total_EDDXCount;
-    title2 "Kaiser Foundation Hospital";
+    class HospitalOwnership UrbanRuralDesi TEACHINGDesignation PrimaryCareShortageArea MentalHealthShortageArea;
+    title "Kaiser Foundation Hospital";
 run;
-*****************************************;
+***********************************************************;
+/* Step 1: Filter the dataset for N/A */
 data NA;
     set ed_data;
     if System = 'N/A';
-    keep  System Category PrimaryCareShortageArea MentalHealthShortageArea EDDXCOUNT;
+    keep system HospitalOwnership LICENSED_BED_SIZE UrbanRuralDesi TEACHINGDesignation PrimaryCareShortageArea MentalHealthShortageArea EDDXCount;
 run;
 
-/* Step 2: Summarize the data using proc means */
-proc means data=NA sum maxdec=0 nonobs ;
-    class PrimaryCareShortageArea MentalHealthShortageArea;
+
+/* Step 2: Generate mean tables for continuous variables */
+proc means data=NA sum;
     var EDDXCount;
-    output out=summary_data sum=Total_EDDXCount;
-    title2 "N/A";
+    class HospitalOwnership UrbanRuralDesi TEACHINGDesignation PrimaryCareShortageArea MentalHealthShortageArea;
+    title "N/A";
 run;
-*****************************************;
-
-
