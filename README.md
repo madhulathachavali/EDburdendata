@@ -33,7 +33,7 @@ Substance Abuse
 | HPSA - Primary Care        | PrimaryCareShortageArea      | Plain Text| Indicates if a facility is in a Health Professional Shortage Area - Primary Care      |
 | HPSA - Mental Health       | MentalHealthShortageArea     | Plain Text| Indicates if a facility is in a Health Professional Shortage Area - Mental Health     |
 
-### Summary
+### Analysis
 
 
 #### Total Number of ED Visits by County
@@ -189,37 +189,45 @@ Total ED Visits: 13,626,808 visits
 
 
 
-#### Conclusion
+### Conclusion
 Based on the analysis of the Emergency Department Burden Dataset, several key insights can be drawn:
 
-1. Total ED Visits by County:
+####  Total ED Visits by County:
 
 Los Angeles County has the highest number of ED visits with 3,468,109 visits.
 Other counties with significant ED visits include Orange County (1,108,283), San Diego (947,565), Riverside (889,722), and San Bernardino (841,649).
 Counties such as Alameda (777,934) and Sacramento (723,933) also show a substantial number of ED visits.
 Smaller counties like Glenn and Modoc have the fewest ED visits, indicating less burden in these regions.
 
-2. ED Visits by Health Condition:
+####  ED Visits by Health Condition:
+   
 Active COVID-19 is the leading health condition, accounting for the highest number of ED visits (8,932,253 visits).
 Hypertension (1,711,200 visits) and Substance Abuse (1,091,496 visits) are also major contributors to ED visits.
 Mental Health issues (920,816 visits) and Diabetes (899,382 visits) are prevalent health conditions leading to significant ED usage.
 
-#### Alameda County Analysis:
-4. Hospital Ownership:
+####  Alameda County Analysis:
+
+1. Hospital Ownership:
 Most facilities in Alameda County are non-profit (70.00%), with the remaining being government-owned (30.00%).
-5. Licensed Bed Size:
+
+2. Licensed Bed Size:
 Most facilities fall in the 300-499 range (40.00%), followed by 100-149 (30.00%).
-6. Urban Rural Designation:
+
+3. Urban Rural Designation:
 All facilities in Alameda County are located in urban areas (100.00%).
-7. Teaching Designation:
+
+4. Teaching Designation:
 Most facilities are non-teaching (90.00%), with only 10.00% being teaching hospitals.
-8. System Affiliation:
+
+5. System Affiliation:
 Facilities are distributed among Alameda Health System, Kaiser Foundation, and Sutter Health, with each system having a significant presence.
-9. Summary Statistics for EDDXCount by System and Category:
+
+6. Summary Statistics for EDDXCount by System and Category:
 a. Alameda Health System: The total number of ED visits is substantial in areas without primary care and mental health shortages.
 b. Sutter Health: Shows variability in ED visits across different shortage areas, with a notable number in regions with both primary care and mental health shortages.
 c. Kaiser Foundation Hospital: Displays the highest number of ED visits in areas without shortages, but also significant numbers in areas with primary care and mental health shortages.
-d.  N/A: Indicates a broad distribution of ED visits across various shortage designations, highlighting the diverse healthcare needs within the county.
-10. Facility Designations and ED Burden:
+d. N/A: Indicates a broad distribution of ED visits across various shortage designations, highlighting the diverse healthcare needs within the county.
+
+7. Facility Designations and ED Burden:
 The data indicates that government-owned facilities, non-profit hospitals, and both teaching and non-teaching hospitals are managing significant ED visits.
 The urban designation of facilities underscores the higher healthcare demand in urban areas compared to rural regions.
