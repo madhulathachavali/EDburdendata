@@ -10,10 +10,10 @@ Sepsis
 Stroke
 Substance Abuse
 
-### Source: Data.gov
+#### Source: Data.gov
 (https://catalog.data.gov/dataset/emergency-department-volume-and-capacity)
 
-### Data Dictionary
+#### Data Dictionary
 | Field Title                | Field Name                   | Data Type | Description                                                                          |
 |----------------------------|------------------------------|-----------|--------------------------------------------------------------------------------------|
 | OSHPD_ID                   | oshpd_id                     | Number    | OSHPD ID for the facility                                                            |
